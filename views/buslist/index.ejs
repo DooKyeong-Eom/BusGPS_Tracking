@@ -1,0 +1,22 @@
+<!-- views/contacts/index.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %> <!-- 1 -->
+  </head>
+  <body>
+    <%- include('../partials/nav') %> <!-- 2 -->
+
+    <div class="buslist buslist-update">
+      <h2>Index</h2>
+      <ul>
+        <% citylist.forEach(function(citylist) { %> <!-- 3 -->
+          <li>
+            <%= citylist.cityname %>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!-- views/contacts/new.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+  </head>
+  <body>
+    <%- include('../partials/nav') %>
+
+    <div class="buslist buslist-update">
+      <h2>Update</h2>
+      <form class="update-form" action="/buslist" method="post">
+        <div>
+          <button type="update">Update</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
